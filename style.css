@@ -647,8 +647,8 @@ body {
     font-size: 1.2rem;
    }
    .button-ctn {
-width: 100%;
-align-items: center;
+    width: 100%;
+   align-items: center;
    }
    .get-started-button1 {
     display: inline-block;
@@ -663,6 +663,18 @@ align-items: center;
     box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
    width: 80%;
 }
+}
+
+@media (min-width: 450px) { 
+    .forth {
+        height: 140vh;
+        background-color: #A5B4FB;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%; /* Ensure full width */
+    }
 }
 
 }

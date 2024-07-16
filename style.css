@@ -99,9 +99,8 @@ body {
     height: auto;
 }
 .companies-section {
-    height: 40vh;
+    height: 50vh;
     background-color: #A6FAFF;
-    padding: 40px 20px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -113,22 +112,12 @@ body {
     font-size: 36px;
     margin-bottom: 40px;
     position: relative;
-    display: inline-block;
-    z-index: 1;
-}
-
-.section-title:before {
-    content: '';
-    position: absolute;
-    left: -10px;
-    bottom: -10px;
-    width: 100%;
-    height: 100%;
     background-color: #FFA6F6; /* Pink background for title shadow */
-    z-index: -1;
     border: 4px solid #000;
     box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
 }
+
+
 
 .grid-container {
     display: grid;
@@ -149,9 +138,7 @@ body {
     text-align: center;
 }
 
-.grid-item:hover {
-    transform: scale(1.05);
-}
+
 
 .grid-item img {
     margin-bottom: 10px;
@@ -212,21 +199,11 @@ body {
     font-size: 36px;
     position: relative;
     display: inline-block;
-    z-index: 1;
-}
-
-.third-title:before {
-    content: '';
-    position: absolute;
-    left: -10px;
-    bottom: -10px;
-    width: 105%;
-    height: 100%;
     background-color: #FFA6F6; /* Pink background for title shadow */
-    z-index: -1;
     border: 4px solid #000;
     box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
 }
+
 
 .card-container {
     display: flex;

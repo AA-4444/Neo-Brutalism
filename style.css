@@ -581,7 +581,7 @@ body {
         font-size: 14px;
     }
     .forth {
-        height: 150vh;
+        height: 140vh;
         background-color: #A5B4FB;
         display: flex;
         align-items: center;
@@ -665,16 +665,6 @@ body {
 }
 }
 
-@media (min-width: 450px) { 
-    .forth {
-        height: 140vh;
-        background-color: #A5B4FB;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%; /* Ensure full width */
-    }
-}
+
 
 }

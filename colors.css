@@ -79,11 +79,11 @@ body {
 }
 @media (max-width: 480px) {
     .color-section {
-        min-height: 100vh;
-        padding-top: 40%; /* Padding to ensure content doesn't touch the top edge */
+        height: 260vh;
+        
     }
     .grid {
-        grid-template-columns: repeat(1, 1fr); /* 1 column for mobile phones */
+        grid-template-columns: repeat(2, 1fr); /* 1 column for mobile phones */
         width: 100%; /* Ensure full width for alignment */
         justify-items: center; /* Center items within the grid */
     }

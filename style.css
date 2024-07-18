@@ -739,7 +739,7 @@ ul.explore-description {
     margin-bottom: 10px; /* Add margin for spacing */
 }
 .explore-section {
-    min-height: 100vh;
+    height: 100vh;
 }
 .explore-title {
     font-size: 1.4rem;

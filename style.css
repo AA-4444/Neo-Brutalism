@@ -27,7 +27,9 @@ body {
     align-items: center;
 }
 
-.logo {
+.logo a {
+    text-decoration: none;
+    color: #000;
     font-size: 24px;
     font-weight: bold;
 }
@@ -412,6 +414,44 @@ body {
 .text-content-mobile{
     display: none;
 }
+
+
+
+/* Explore Section Styles */
+.explore-section {
+    background-color: #A6FAFF;
+    padding: 40px 20px;
+    text-align: center;
+    height: 90vh;
+}
+
+.explore-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.explore-description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 0 auto 20px;
+}
+.explore-description1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.explore-description2 {
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 4%;
+}
+
+ul.explore-description {
+    text-align: left;
+    margin: 0 auto;
+}
 /* Additional styles for smaller screens */
 @media (max-width: 480px) {
     html, body {
@@ -450,9 +490,10 @@ body {
         margin-top: 5px;
     }
 
-    .logo {
+    .logo a {
         font-size: 1rem; /* Reduce font size for better fit on smaller screens */
         margin-bottom: 10px; /* Add spacing between elements */
+        
     }
 
     .github-logo svg {
@@ -501,12 +542,7 @@ body {
        height: 300px;
     }
     
-    .third {
-        display: none;
-    }
-    .final {
-        display: none;
-    }
+    
   .companies-section {
     height: 40vh;
   }
@@ -662,9 +698,62 @@ body {
     transition: background-color 0.3s, box-shadow 0.3s;
     box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
    width: 80%;
-}
+  }
+
+  .third {
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Adjust height to auto for better flexibility */
+    padding: 20px; /* Add padding for better spacing on mobile */
 }
 
+.third-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px; /* Add margin for spacing */
+}
 
+.card-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
+    gap: 20px; /* Add gap between cards */
+    width: 100%; /* Ensure container takes full width */
+}
+
+.card {
+    width: 90%; /* Set card width to 90% for better fit on mobile */
+    max-width: 400px; /* Optional: Set max-width for larger screens */
+}
+
+.card-header {
+    height: 200px; /* Adjust height as needed */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Adjust font size for better readability on mobile */
+    margin-bottom: 10px; /* Add margin for spacing */
+}
+
+.card-description {
+    font-size: 1rem; /* Adjust font size for better readability on mobile */
+    margin-bottom: 10px; /* Add margin for spacing */
+}
+.explore-section {
+    min-height: 100vh;
+}
+.explore-title {
+    font-size: 1.4rem;
+}
+.explore-description {
+    font-size: 1.2rem;
+}
+.explore-description1 {
+    font-size: 1.4rem;
+}
+.explore-description2 {
+    font-size: 1.2rem;
+}
+
+}
 
 }

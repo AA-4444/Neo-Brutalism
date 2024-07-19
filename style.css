@@ -480,26 +480,7 @@ ul.explore-description {
 
     /* Adaptation for Top Bar */
 @media (max-width: 480px) {
-    .top-bar {
-        padding: 10px 10px; /* Reduce padding for better fit on smaller screens */
-        width: 100%;
-    }
-
-    .top-bar-content {
-        align-items: center; /* Center-align all elements */
-        margin-top: 5px;
-    }
-
-    .logo a {
-        font-size: 1rem; /* Reduce font size for better fit on smaller screens */
-        margin-bottom: 10px; /* Add spacing between elements */
-        
-    }
-
-    .github-logo svg {
-        width: 20px; /* Reduce size for better fit on smaller screens */
-        height: 20px;
-    }
+   
 }
 
 /* Adaptation for First-Mobile Section */
@@ -527,8 +508,8 @@ ul.explore-description {
     }
 
     .first-mobile .explore-button {
-        font-size: 15px; /* Adjust font size for smaller screens */
-        padding: 8px 16px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 12px 30px;
         margin-top: 20px; /* Ensure spacing between elements */
     }
 

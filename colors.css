@@ -41,9 +41,7 @@ body {
     transition: transform 0.2s;
 }
 
-.github-logo svg:hover {
-    transform: scale(1.1);
-}
+
 
 .color-section {
     display: flex;

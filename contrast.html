@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrast</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather", serif;
+    overflow-x: hidden;
+}
+        body {
+            margin: 0;
+            
+        }
+
+        .top-bar {
+    background-color: #FFFFFF;
+    border-bottom: 4px solid #000000;
+    padding: 2% 20px;
+    width: 100%;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.github-logo svg {
+    fill: #000000;
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s;
+}
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-side, .right-side {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left-side {
+            background-color: #A5B4FB; /* Neo Brutalism yellow */
+            color: black;
+            position: relative;
+        }
+
+        .right-side {
+            background-color: #B8FF9F; /* Neo Brutalism pink */
+            color: black;
+            position: relative;
+        }
+
+        .contrast-button {
+            background-color: #FFD348;
+            color: black;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 20px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            box-shadow: 3px 3px 0px #000000;
+        }
+
+        .color-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .color-box {
+            width: 100%;
+            height: 70%;
+        }
+
+        .color-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 30%;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .hex-code {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .color-name {
+            font-size: 1.2rem;
+        }
+
+        .description {
+            text-align: center;
+            padding: 0 20px;
+            font-size: 1.6rem;
+            width: 80%;
+        }
+        @media (max-width: 480px) {
+            .contrast-button {
+               display: none;
+            }
+
+        .container {
+                flex-direction: column;
+            }
+
+            .left-side, .right-side {
+                width: 100%;
+                height: auto;
+            }
+
+            .color-card {
+                width: 80%;
+                height: auto;
+                margin-bottom: 40px;
+            }
+            .color-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.color-card .hex-code,
+.color-card .color-name {
+    outline: none !important; /* Remove the focus outline */
+    border: none !important; /* Ensure no border is added */
+    box-shadow: none !important; /* Ensure no box shadow is added */
+    -webkit-tap-highlight-color: transparent !important; /* Remove the highlight color on mobile */
+    border: 0 !important; /* Ensure no borders are applied */
+    background-color: inherit !important; /* Ensure no background color changes */
+    color: inherit !important; /* Ensure no text color changes */
+}
+
+.hex-code {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.color-name {
+    font-size: 1.2rem;
+}
+
+/* Globally remove focus outline and box shadow */
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+            .color-box {
+                height: 150px;
+            }
+
+            .description {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="top-bar">
+        <div class="top-bar-content">
+            <div class="logo">
+                <a href="index.html">Neo-Brutalism</a>
+            </div>
+            <div class="github-logo">
+                <a href="https://github.com/AA-4444" target="_blank">
+                    <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+                        <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.6.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.014 8.014 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left-side">
+            <div class="contrast-button">Contrast</div>
+            <div class="color-card infused">
+                <div class="color-box" style="background-color: #231640;"></div>
+                <div class="color-info">
+                    <div class="hex-code">#231640</div>
+                    <div class="color-name">Infused Black</div>
+                </div>
+            </div>
+            <div class="description">Infuse black with an accent color is a popular practice in current UI styles.</div>
+        </div>
+        <div class="right-side">
+            <div class="color-card pure">
+                <div class="color-box" style="background-color: #000000;"></div>
+                <div class="color-info">
+                    <div class="hex-code">#000000</div>
+                    <div class="color-name">Pure Black</div>
+                </div>
+            </div>
+            <div class="description">Neo brutalism is not afraid of merging pure black (#000000) with other colors.</div>
+        </div>
+    </div>
+</body>
+</html>

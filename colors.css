@@ -84,5 +84,6 @@ body {
         grid-template-columns: repeat(2, 1fr); /* 1 column for mobile phones */
         width: 100%; /* Ensure full width for alignment */
         justify-items: center; /* Center items within the grid */
+        margin-left: 0%;
     }
 }
